@@ -168,6 +168,9 @@ FLAGS
     --theta_hidden=THETA_INITIAL
         Default: 30.0
         Hyperparameter describing the frequency of the color space. Only applies to the hidden layers of the network.
+    --save_gif=SAVE_GIF
+        Default: False
+        Whether or not to save a GIF animation of the generation procedure. Only works if save_progress is set to True.
 ```
 
 ### Priming
@@ -177,7 +180,7 @@ Technique first devised and shared by <a href="https://twitter.com/quasimondo">M
 Simply specify the path to the image you wish to use, and optionally the number of initial training steps.
 
 ```bash
-$ imagine 'a clear night sky filled with stars' --start-image-path ./cloudy-night-sky.jpg
+$ imagine 'a clear night sky filled with stars' --start_image_path ./cloudy-night-sky.jpg
 ```
 
 Primed starting image
